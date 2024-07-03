@@ -21,4 +21,4 @@ The original environment for SPComBat development was using
 <div id='id-section2'/>
 
 ## Estimate inter-scanner variability using SPComBat
-To estimate the ComBat-derived parameters representing inter-scanner variation in T1-weighted images, please refer to the `SPComBat_script_estimate.m` script that contains step-by-step instructions to demonstrate how to run the code on an individual basis. You can also use the matched T1-weighted images provided in this directory to test the script.
+To estimate ComBat-derived parameters representing inter-scanner variation in T1-weighted images, please refer to the `SPComBat_script_estimate.m` script that contains step-by-step instructions to demonstrate how to run the code on an individual basis. You can also use the matched T1-weighted images provided in this directory to test the script.
