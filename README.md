@@ -18,7 +18,7 @@ T1-weighted imaging holds wide applications in clinical and research settings; h
 <div id='id-section2'/>
   
 ## Software implementation
-The proposed method is an extension of [ComBat harmonization](https://github.com/Jfortin1/ComBatHarmonization/tree/master), which has been currently implemented using Matlab. The Python is under development.
+The proposed method is an extension of [ComBat harmonization](https://github.com/Jfortin1/ComBatHarmonization/tree/master), which has been currently implemented using Matlab. The Python version of our method is under development.
 
 ![The proposed framework](https://github.com/ChangleChen/SPComBat/blob/main/fig1.jpg)
 
