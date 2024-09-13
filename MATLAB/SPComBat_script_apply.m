@@ -52,7 +52,7 @@ fn_img = dir(fullfile(mp,'mrs_*.nii')); fn_img = {fn_img.name}; % the native ima
 % specify site indicators
 site_indicator = {'_philips_','_ge_','_prisma_','_trio_'};
 
-
+path_now = pwd;
 for i = 1:numel(fn_img) % this process is specific to each brain scan
     % input arg: 
     % 1. parametric maps in MNI (gamma, delta, grand mean, and grand variance)
@@ -86,11 +86,13 @@ for i = 1:numel(fn_img) % this process is specific to each brain scan
     fn_nat_img = {fn_nat_img};
     fn_y_def = {fn_y_def};
     saving_dir = {mp}; % the output directory
+    cd(saving_dir{1}); % moving to the saving directory
 
     sp_min2nat_apply(fn_mni_para,fn_mni_mask,fn_nat_img,fn_y_def,saving_dir); % input should be cell array for each arg
     fprintf('sub: %g done\n',i);
 end
 delete(fullfile(saving_dir{1},'y_i_inverse_mapping.nii')); % remove inverse deformation to save storage
+cd(path_now); % back to the original directory
 
 % output: filename with prefix "nat_*"
 
