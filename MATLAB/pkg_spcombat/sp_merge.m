@@ -1,6 +1,7 @@
 function L2 = sp_merge(L,img)
 for threshold = 1:27
     el = unique(L);
+    el(end+1) = el(end) + 1;
     [counting,dict] = histcounts(L(:),el);
     target = dict(counting==threshold);
     for obs = 1:numel(target)
