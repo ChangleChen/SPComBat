@@ -18,7 +18,8 @@ img = spm_read_vols(hdr); % image
 mask = img;
 mask(mask>=threshold) = threshold; % intensity based on histgram
 mask(mask~=threshold) = 0; mask = mask/threshold;
-L = mask.*L.*mask_mni;  % apply additional MNI mask to ensure spatial continuity
+rimg_mask = imresize3(mask_mni,size(img),'Method','nearest');
+L = mask.*L.*rimg_mask;  % apply additional MNI mask to ensure spatial continuity
 L = sp_merge(L,img); % merge small superpixels less than 3*3*3 voxels
 el = unique(L);
 n_region = numel(unique(L));
