@@ -2,7 +2,7 @@
 ### Superpixel-ComBat Modeling: A Joint Approach for Harmonization and Characterization of Inter-Scanner Variability in T1-Weighted Images
 
 --------
-**Maintainer**: Chang-Le Charles Chen, chc348@pitt.edu
+**Maintainer**: Chang-Le Charles Chen, chc348[at]pitt[dot]edu
 
 **Licenses**: 
 - Matlab code: MIT License
