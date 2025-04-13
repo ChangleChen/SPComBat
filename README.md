@@ -7,7 +7,7 @@
 **Licenses**: 
 - Matlab code: MIT License
 
-**References**: The manuscript of this method is currently under review. Please cite our paper/repository if you are using this method or its extension for image harmonization or characterization of inter-scanner variability. 
+**References**: Please cite our [paper](https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00306/124455) if you are using this method or its extension for image harmonization or characterization of inter-scanner variability. https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00306/124455
 
 <div id='id-section1'/>
   
